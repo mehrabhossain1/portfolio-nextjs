@@ -142,19 +142,10 @@ export default function App() {
         <span className="text-4xl font-semibold">
           MERN Stack Web Application Developer.
         </span>
-        <p className="mt-8 max-w-[60ch]">
+        <p className="mt-8 max-w-[50ch] text-2xl">
           I thrive on crafting dynamic and user-centric web applications that
           seamlessly integrate cutting-edge technologies to deliver robust
           solutions.
-        </p>
-        <p className="mt-4 max-w-[60ch]">
-          With expertise in MongoDB, Express.js, React.js, and Node.js, I
-          specialize in building scalable, efficient, and feature-rich
-          applications that meet the unique needs of my clients. Whether
-          it&apos;s developing intuitive user interfaces with React, designing
-          efficient backend systems with Node.js and Express, or ensuring
-          seamless data management with MongoDB, I&apos;m dedicated to
-          delivering top-notch solutions that elevate user experiences.
         </p>
       </div>
       <div className="w-1/3">
