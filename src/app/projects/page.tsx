@@ -13,7 +13,7 @@ const projects = [
     image: "/gadgetgrove.png",
     liveSite: " https://ass-8-client.vercel.app", // Add live site URL
     clientGithub: "https://github.com/mehrabhossain1/assignment-8-client", // Add client-side GitHub URL
-    serverGithub: "https://github.com/server/project1", // Add server-side GitHub URL
+    serverGithub: "https://github.com/mehrabhossain1/assignment-8-server", // Add server-side GitHub URL
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projects = [
     image: "/unityaid.png",
     liveSite: "https://startling-seahorse-4904d4.netlify.app", // Add live site URL
     clientGithub: "https://github.com/mehrabhossain1/assignment-7-client", // Add client-side GitHub URL
-    serverGithub: "https://github.com/server/project2", // Add server-side GitHub URL
+    serverGithub: "https://github.com/mehrabhossain1/assignment-7-server", // Add server-side GitHub URL
   },
   // Add more projects as needed
 ];
@@ -39,6 +39,7 @@ const ProjectsPage = () => {
               alt={project.title}
               layout="fill"
               objectFit="cover"
+              objectPosition="top"
             />
           </div>
           <div className="p-4">
