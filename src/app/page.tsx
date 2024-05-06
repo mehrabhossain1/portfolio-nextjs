@@ -139,9 +139,9 @@ export default function App() {
             </motion.span>
           </motion.div>
         </h1>
-        <motion.span className="text-4xl font-semibold">
+        <span className="text-4xl font-semibold">
           MERN Stack Web Application Developer.
-        </motion.span>
+        </span>
         <p className="mt-8 max-w-[60ch]">
           I thrive on crafting dynamic and user-centric web applications that
           seamlessly integrate cutting-edge technologies to deliver robust

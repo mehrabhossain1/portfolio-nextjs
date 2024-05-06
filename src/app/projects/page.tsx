@@ -1,20 +1,27 @@
 import Image from "next/image";
 import { Card } from "@nextui-org/react";
+import Link from "next/link";
 
 const projects = [
   {
     id: 1,
-    title: "E-commerce Website",
+    title: "GadgetGrove",
     description:
-      "A full-stack e-commerce website built with the MERN stack, featuring user authentication, product management, shopping cart functionality, and secure payment processing.",
-    image: "/project1.jpg", // Replace with your image URL or import images
+      "A full-stack e-commerce website built with Next.js, featuring user authentication, product management, shopping cart functionality, and secure payment processing.",
+    image: "/gadgetgrove.png",
+    liveSite: " https://ass-8-client.vercel.app", // Add live site URL
+    clientGithub: "https://github.com/mehrabhossain1/assignment-8-client", // Add client-side GitHub URL
+    serverGithub: "https://github.com/server/project1", // Add server-side GitHub URL
   },
   {
     id: 2,
-    title: "Social Networking App",
+    title: "UnityAid",
     description:
-      "A social networking platform developed using the MERN stack, allowing users to create profiles, connect with friends, share posts, and interact through comments and likes.",
-    image: "/project2.jpg",
+      "A Donation platform developed using the MERN stack, allowing users to create profiles, connect with friends, share posts, and interact through comments and likes.",
+    image: "/unityaid.png",
+    liveSite: "https://startling-seahorse-4904d4.netlify.app", // Add live site URL
+    clientGithub: "https://github.com/mehrabhossain1/assignment-7-client", // Add client-side GitHub URL
+    serverGithub: "https://github.com/server/project2", // Add server-side GitHub URL
   },
   // Add more projects as needed
 ];
@@ -35,6 +42,34 @@ const ProjectsPage = () => {
           <div className="p-4">
             <h3 className="text-lg font-semibold">{project.title}</h3>
             <p className="text-sm text-gray-600 mt-2">{project.description}</p>
+            <div className="mt-4 flex justify-between">
+              <Link
+                href={project.liveSite}
+                className="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </Link>
+              <div>
+                <Link
+                  href={project.clientGithub}
+                  className="btn mr-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Client GitHub
+                </Link>
+                <Link
+                  href={project.serverGithub}
+                  className="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Server GitHub
+                </Link>
+              </div>
+            </div>
           </div>
         </Card>
       ))}
