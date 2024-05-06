@@ -3,6 +3,7 @@
 import { Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import MotionButtonOutline from "../Button/MotionButtonOutline";
 
 const Header = () => {
   const pathname = usePathname();
@@ -46,6 +47,18 @@ const Header = () => {
           >
             Blogs
           </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <MotionButtonOutline>
+            <Link
+              href="/mehrabhossainresume.pdf"
+              className="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </Link>
+          </MotionButtonOutline>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
