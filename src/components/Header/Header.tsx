@@ -33,6 +33,14 @@ const Header = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
+            className={pathname === "/skills" ? "text-sky-400" : ""}
+            href="/skills"
+          >
+            Skills
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
             className={pathname === "/blogs" ? "text-sky-400" : ""}
             href="/blogs"
           >

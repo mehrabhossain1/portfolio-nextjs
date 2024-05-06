@@ -3,7 +3,7 @@ import React from "react";
 const AboutPage = () => {
   return (
     <>
-      <div className="font-semibold text-2xl mt-6">
+      <div className="font-semibold text-2xl mt-10">
         Welcome to my MERN Stack Web Development portfolio! As a passionate MERN
         Stack developer, I thrive on crafting dynamic and user-centric web
         applications that seamlessly integrate cutting-edge technologies to
