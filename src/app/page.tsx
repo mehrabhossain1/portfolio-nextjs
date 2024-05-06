@@ -22,8 +22,8 @@ const imageAnimation = {
 
 export default function App() {
   return (
-    <div className="flex justify-between items-center p-6">
-      <div className="w-1/2 pr-6">
+    <div className="max-h-screen flex justify-between items-center p-6">
+      <div className="w-2/3 pr-6 ">
         <h1 className="text-6xl font-bold mb-2">
           <motion.div
             initial={{ opacity: 0 }}
@@ -149,16 +149,16 @@ export default function App() {
           aspernatur?
         </p>
       </div>
-      <div className="w-1/2">
+      <div className="w-1/3">
         <motion.div
           variants={imageAnimation}
           initial="initial"
           animate="animate"
         >
           <Image
-            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
-            width={500}
-            height={500}
+            src="/image.jpg"
+            width={400}
+            height={400}
             alt="My Image"
             className="max-w-full h-auto"
           />
