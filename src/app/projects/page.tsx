@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Card } from "@nextui-org/react";
 import Link from "next/link";
+import MotionButton from "@/components/Button/MotionButton";
+import MotionButtonOutline from "@/components/Button/MotionButtonOutline";
 
 const projects = [
   {
@@ -41,33 +43,41 @@ const ProjectsPage = () => {
           </div>
           <div className="p-4">
             <h3 className="text-lg font-semibold">{project.title}</h3>
-            <p className="text-sm text-gray-600 mt-2">{project.description}</p>
+            <p className="text-sm text-gray-600 mt-2 line-clamp-3">
+              {project.description}
+            </p>
             <div className="mt-4 flex justify-between">
-              <Link
-                href={project.liveSite}
-                className="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Site
-              </Link>
-              <div>
+              <MotionButtonOutline>
                 <Link
-                  href={project.clientGithub}
-                  className="btn mr-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Client GitHub
-                </Link>
-                <Link
-                  href={project.serverGithub}
+                  href={project.liveSite}
                   className="btn"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Server GitHub
+                  Live Site
                 </Link>
+              </MotionButtonOutline>
+              <div className="flex gap-2">
+                <MotionButton>
+                  <Link
+                    href={project.clientGithub}
+                    className="btn mr-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Frontend
+                  </Link>
+                </MotionButton>
+                <MotionButton>
+                  <Link
+                    href={project.serverGithub}
+                    className="btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Backend
+                  </Link>
+                </MotionButton>
               </div>
             </div>
           </div>
