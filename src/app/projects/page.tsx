@@ -21,7 +21,7 @@ const projects = [
     description:
       "A Donation platform developed using the MERN stack, allowing users to create profiles, connect with friends, share posts, and interact through comments and likes.",
     image: "/unityaid.png",
-    liveSite: "https://startling-seahorse-4904d4.netlify.app", // Add live site URL
+    liveSite: "https://splendorous-piroshki-b84b3d.netlify.app", // Add live site URL
     clientGithub: "https://github.com/mehrabhossain1/assignment-7-client", // Add client-side GitHub URL
     serverGithub: "https://github.com/mehrabhossain1/assignment-7-server", // Add server-side GitHub URL
   },
