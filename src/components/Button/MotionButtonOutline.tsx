@@ -10,7 +10,7 @@ const MotionButtonOutline = ({ children }: { children: React.ReactNode }) => {
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.2 }}
     >
-      <Button className="font-semibold transition-all bg-transparent text-sky-400 border-1 border-sky-400 hover:bg-sky-500 hover:text-white focus:bg-sky-500">
+      <Button className="font-semibold transition-all bg-transparent text-sky-400 border-1 border-sky-400 hover:bg-sky-500 hover:text-white">
         {children}
       </Button>
     </motion.div>

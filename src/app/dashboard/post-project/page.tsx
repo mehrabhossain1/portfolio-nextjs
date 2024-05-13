@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -52,69 +53,83 @@ const PostProjectPage = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="title">Title:</label>
-        <br />
+    <div className="max-w-md mx-auto mt-5">
+      <h1 className="text-3xl font-semibold mb-4 text-center text-sky-400">
+        Post A Project
+      </h1>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <label htmlFor="title" className="block">
+          Title:
+        </label>
         <input
           type="text"
           id="title"
           name="title"
           value={formData.title}
           onChange={handleChange}
+          className="w-full border rounded-md px-3 py-2"
         />
-        <br />
-        <label htmlFor="description">Description:</label>
-        <br />
+        <label htmlFor="description" className="block">
+          Description:
+        </label>
         <input
           type="text"
           id="description"
           name="description"
           value={formData.description}
           onChange={handleChange}
+          className="w-full border rounded-md px-3 py-2"
         />
-        <br />
-        <label htmlFor="image">Image:</label>
-        <br />
+        <label htmlFor="image" className="block">
+          Image:
+        </label>
         <input
           type="text"
           id="image"
           name="image"
           value={formData.image}
           onChange={handleChange}
+          className="w-full border rounded-md px-3 py-2"
         />
-        <br />
-        <label htmlFor="liveSite">Live Site:</label>
-        <br />
+        <label htmlFor="liveSite" className="block">
+          Live Site:
+        </label>
         <input
           type="text"
           id="liveSite"
           name="liveSite"
           value={formData.liveSite}
           onChange={handleChange}
+          className="w-full border rounded-md px-3 py-2"
         />
-        <br />
-        <label htmlFor="clientGithub">Client Github:</label>
-        <br />
+        <label htmlFor="clientGithub" className="block">
+          Client Github:
+        </label>
         <input
           type="text"
           id="clientGithub"
           name="clientGithub"
           value={formData.clientGithub}
           onChange={handleChange}
+          className="w-full border rounded-md px-3 py-2"
         />
-        <br />
-        <label htmlFor="serverGithub">Server Github:</label>
-        <br />
+        <label htmlFor="serverGithub" className="block">
+          Server Github:
+        </label>
         <input
           type="text"
           id="serverGithub"
           name="serverGithub"
           value={formData.serverGithub}
           onChange={handleChange}
+          className="w-full border rounded-md px-3 py-2"
         />
-        <br />
-        <button type="submit">Post Project</button>
+        <Button
+          type="submit"
+          className="font-semibold transition-all bg-transparent text-sky-400 border-1 border-sky-400 hover:bg-sky-500 hover:text-white"
+        >
+          Post Project
+        </Button>
       </form>
     </div>
   );
