@@ -49,6 +49,14 @@ const Header = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
+          <Link
+            className={pathname === "/blogs" ? "text-sky-400" : ""}
+            href="/dashboard"
+          >
+            Dashboard
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
           <MotionButtonOutline>
             <Link
               href="/mehrabhossainresume.pdf"

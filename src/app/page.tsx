@@ -148,7 +148,7 @@ export default function App() {
           solutions.
         </p>
       </div>
-      <div className="w-1/3">
+      <div className="md:w-1/3 border">
         <motion.div
           variants={imageAnimation}
           initial="initial"
