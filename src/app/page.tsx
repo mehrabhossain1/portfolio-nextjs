@@ -22,9 +22,9 @@ const imageAnimation = {
 
 export default function App() {
   return (
-    <div className="max-h-screen flex justify-between items-center p-6">
-      <div className="w-2/3 pr-6 ">
-        <h1 className="text-6xl font-bold mb-2">
+    <div className="max-h-screen lg:flex justify-between items-center p-6">
+      <div className="lg:w-2/3 pr-6">
+        <h1 className="text-5xl font-bold mb-2 md:text-6xl">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -139,7 +139,7 @@ export default function App() {
             </motion.span>
           </motion.div>
         </h1>
-        <span className="text-4xl font-semibold">
+        <span className="text-3xl lg:text-4xl font-semibold">
           MERN Stack Web Application Developer.
         </span>
         <p className="mt-8 max-w-[50ch] text-2xl">
