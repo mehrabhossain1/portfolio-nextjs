@@ -1,3 +1,5 @@
+import SingleProjectCard from "@/components/Card/SingleProjectCard";
+
 const SingleProjectPage = async ({
   params,
 }: {
@@ -14,7 +16,7 @@ const SingleProjectPage = async ({
 
   return (
     <div>
-      <h1>Single Project Page</h1>
+      <SingleProjectCard project={project} />
     </div>
   );
 };

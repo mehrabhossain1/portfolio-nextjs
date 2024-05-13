@@ -50,7 +50,7 @@ const Header = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className={pathname === "/blogs" ? "text-sky-400" : ""}
+            className={pathname === "/dashboard" ? "text-sky-400" : ""}
             href="/dashboard"
           >
             Dashboard

@@ -1,9 +1,11 @@
-import React from "react";
+import Link from "next/link";
 
 const DashboardPage = () => {
   return (
     <div>
-      <h1>Dashboard Page</h1>
+      <Link href="/dashboard/post-project">Post Project</Link>
+      <Link href="/dashboard/post-skill">Post Skill</Link>
+      <Link href="/dashboard/post-blog">Post Blog</Link>
     </div>
   );
 };
