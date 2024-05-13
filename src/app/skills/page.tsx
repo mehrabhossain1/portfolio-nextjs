@@ -1,9 +1,12 @@
 import Image from "next/image";
 
 const SkillsPage = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/skills", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    "https://portfolio-server-taupe-sigma.vercel.app/api/v1/skills",
+    {
+      cache: "no-store",
+    }
+  );
   const skills = await res.json();
 
   return (
