@@ -1,8 +1,3 @@
-import Image from "next/image";
-import { Card } from "@nextui-org/react";
-import Link from "next/link";
-import MotionButton from "@/components/Button/MotionButton";
-import MotionButtonOutline from "@/components/Button/MotionButtonOutline";
 import AllProjectsCard from "@/components/Card/AllProjectsCard";
 
 export type TProject = {
@@ -16,9 +11,12 @@ export type TProject = {
 };
 
 const ProjectsPage = async () => {
-  const res = await fetch(`${process.env.BACKEND_URL}/projects`, {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `https://portfolio-server-taupe-sigma.vercel.app/api/v1/projects`,
+    {
+      cache: "no-store",
+    }
+  );
   const projects = await res.json();
   // console.log(projects);
 

@@ -8,9 +8,12 @@ const SingleProjectPage = async ({
   const { projectId } = params;
   //   console.log(projectId);
 
-  const res = await fetch(`${process.env.BACKEND_URL}/projects/${projectId}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `https://portfolio-server-taupe-sigma.vercel.app/api/v1/projects/${projectId}`,
+    {
+      cache: "no-store",
+    }
+  );
   const project = await res.json();
   console.log(project);
 
