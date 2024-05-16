@@ -53,6 +53,7 @@ const Header = () => {
             className={pathname === "/dashboard" ? "text-sky-400" : ""}
             href="/dashboard"
             // comment
+            // comment 2
           >
             Dashboard
           </Link>
