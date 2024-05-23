@@ -1,3 +1,4 @@
+"use client";
 import { TProject } from "@/app/projects/page";
 import Image from "next/image";
 import { Card } from "@nextui-org/react";
