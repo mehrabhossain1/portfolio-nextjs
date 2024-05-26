@@ -10,6 +10,7 @@ export const loginUser = async (data: FormValues) => {
     },
     body: JSON.stringify(data),
     cache: "no-store",
+    //
   });
   const userInfo = await res.json();
   return userInfo;
