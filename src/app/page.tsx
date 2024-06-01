@@ -148,7 +148,7 @@ export default function App() {
           solutions.
         </p>
       </div>
-      <div className="md:w-1/3 border rounded-full">
+      <div className="md:w-1/3 rounded-full">
         <motion.div
           variants={imageAnimation}
           initial="initial"
