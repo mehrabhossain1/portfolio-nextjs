@@ -52,10 +52,6 @@ const Header = () => {
           <Link
             className={pathname === "/dashboard" ? "text-sky-400" : ""}
             href="/dashboard"
-            // comment
-            // comment 2
-            // comment 3
-            // comment 4
           >
             Dashboard
           </Link>
@@ -63,7 +59,7 @@ const Header = () => {
         <NavbarItem>
           <MotionButtonOutline>
             <Link
-              href="/mehrabhossainresume.pdf"
+              href="/Meharab_Hossan_Munna_MERN_Stack_Web_Developer_RESUME.pdf"
               className="btn"
               target="_blank"
               rel="noopener noreferrer"
