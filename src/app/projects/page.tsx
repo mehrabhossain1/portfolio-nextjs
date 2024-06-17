@@ -11,12 +11,9 @@ export type TProject = {
 };
 
 const ProjectsPage = async () => {
-  const res = await fetch(
-    `https://portfolio-server-taupe-sigma.vercel.app/api/v1/projects`,
-    {
-      cache: "no-store",
-    }
-  );
+  const res = await fetch(`http://localhost:5000/api/v1/projects`, {
+    cache: "no-store",
+  });
   const projects = await res.json();
   // console.log(projects);
 
